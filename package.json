@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~11.2.3",
     "@angular/platform-browser-dynamic": "~11.2.3",
     "@angular/router": "~11.2.3",
+    "@web-taxco/spa-shared-state": "npm:@andresqz/spa-shared-state@^1.0.2",
     "rxjs": "~6.6.0",
     "single-spa": ">=4.0.0",
     "single-spa-angular": "^4.9.2",

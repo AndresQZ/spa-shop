@@ -2,7 +2,6 @@ import { Component,  OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { AppProps, CustomProps } from 'single-spa';
 import {
-  singleSpaPropsSubject,
   SingleSpaProps,
 } from 'src/single-spa/single-spa-props';
 import { SandBoxComponent } from './sandbox/SandBoxComponent';
@@ -24,14 +23,6 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private sandbox: SandBoxComponent) {}
 
   ngOnInit(): void {
-   
-    // this.subscription = singleSpaPropsSubject.subscribe(
-    //   props => { 
-    //     //const { authTokenSubject} : { authTokenSubject: CustomProps } =  props;
-    //     this.sandbox.singleSpaProps  =  props as any;
-    //     console.log(this.singleSpaProps)
-    //   }
-    // );
 
     this.subscriptionSharedData = sharedData$.subscribe((data: any) => {
       console.log("inside sharedDataSubcription , spa-shop", data);
